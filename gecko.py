@@ -27,7 +27,7 @@ from streamlit_autorefresh import st_autorefresh
 # CONFIG
 # =========================================================
 st.set_page_config(
-    page_title="🚀",
+    page_title="🚀 Crypto AI ULTRA",
     layout="wide"
 )
 
@@ -86,7 +86,7 @@ html, body, [class*="css"] {
 # =========================================================
 # TITLE
 # =========================================================
-st.title("🚀")
+st.title("🚀 Crypto Smart AI ULTRA++")
 
 # =========================================================
 # SIDEBAR
@@ -180,11 +180,11 @@ interval_map = {
 
 days_map = {
 
-    "5m": 1,
-    "15m": 1,
+    "5m": 7,
+    "15m": 14,
 
-    "1h": 7,
-    "4h": 30,
+    "1h": 30,
+    "4h": 90,
 
     "1d": 365
 }
@@ -585,10 +585,10 @@ for symbol in coins:
         limit
     )
 
-    if df is None or len(df) < 30:
+    if df is None or df.empty:
 
         st.warning(
-            f"{symbol} data tidak cukup"
+            f"{symbol} gagal ambil data"
         )
 
         continue
