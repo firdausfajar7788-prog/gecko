@@ -27,7 +27,7 @@ from streamlit_autorefresh import st_autorefresh
 # CONFIG
 # =========================================================
 st.set_page_config(
-    page_title="🚀 Crypto AI ULTRA",
+    page_title="!!!",
     layout="wide"
 )
 
@@ -86,7 +86,7 @@ html, body, [class*="css"] {
 # =========================================================
 # TITLE
 # =========================================================
-st.title("🚀 Crypto Smart AI ULTRA++")
+st.title("!!!!")
 
 # =========================================================
 # SIDEBAR
